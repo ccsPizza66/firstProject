@@ -1,0 +1,100 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/*.header {
+	background: aqua;
+	height:10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+*/
+
+.background-video {
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	z-index: -10;
+	width: 100%;
+}
+
+.app {
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.time-pick, .play-pause, .weather-pick {
+	/*border: solid black 1px;*/
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: column;
+	flex: 1;
+	align-items: center;
+	height: 100%;
+}
+
+.time-pick button {
+	width: 30%;
+	font-size: 20px;
+	border-radius: 5px;
+	color: white;
+	border: solid white 2px;
+	background-color: transparent;
+	transition: all 0.5s ease;
+}
+
+.time-pick button:hover {
+	background: white;
+	color: black;
+}
+
+.header {
+	position: absolute;
+	top: 10%;
+	color: lightblue;
+	font-family: fangsong;
+	font-size: 20px;
+}
+
+.play-pause svg {
+	position: absolute;
+	height: 50%;
+	top: 50%;
+	transform: translate(0,-50%);
+	pointer-events: none;
+}
+
+.play-pause h1 {
+	position: absolute;
+	bottom: 10%;
+}
+
+.weather-pick button {
+	border: none;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	padding: 30px;
+}
+
+.weather-pick button:nth-child(1) {
+	background-color: #8080ff;
+}
+
+.weather-pick button:nth-child(2) {
+	background-color: #ffbf80;
+}
+
+.weather-pick button img {
+	height: 100%;
+}
+/*
+.play-pause button {
+	height: 20%;
+	position: absolute;
+	top: 40%;
+}
+*/
