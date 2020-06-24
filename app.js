@@ -26,7 +26,7 @@ $('.playbutton').click(function() {
 
 const circleLength = $('.movingCircle circle').get(0).getTotalLength();
 $('.movingCircle circle').get(0).style.strokeDasharray = circleLength;
-//$('.movingCircle circle').get(0).style.strokeDashoffset = circleLength;
+//('.movingCircle circle').get(0).style.strokeDashoffset = circleLength;
 
 // when the music starts playing
 $('.background-music').get(0).ontimeupdate = function()
